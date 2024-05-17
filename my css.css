@@ -1,0 +1,7 @@
+<style>
+        header {padding: 5px;text-align: center;background-color: #e3afed;color: black;margin: 0px;}
+        h1{font-weight: bold;}
+        selection#main {float: right;width: 70%;height: 200px; background-color: yellow;}
+        nav{float: left;width: 30%;height: 200px;background-color: #ffd800;}
+        footer{background-color: #954b4b;color: #efe5d0;text-align: center;padding: 10px;margin: 0px 0px 0px 0px;font-size: 90%; clear: both;}
+    </style>
