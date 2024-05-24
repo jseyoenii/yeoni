@@ -4,9 +4,13 @@
     <style>
         header {padding: 5px;text-align: center;background-color: #e3afed;color: black;margin: 0px;}
         h1{font-weight: bold;}
-        selection#main {float: right;width: 70%;height: 200px; background-color: yellow;}
+        #main {float: right;width: 70%;height: 200px; background-color: yellow;}
         nav{float: left;width: 30%;height: 200px;background-color: #ffd800;}
         footer{background-color: #954b4b;color: #efe5d0;text-align: center;padding: 10px;margin: 0px 0px 0px 0px;font-size: 90%; clear: both;}
+   
+        @media screen and (max-width:480px){nav, #main {width: 100%;}#header{padding: 5px;}}
+        @media screen and (max-width: 500px){ header, nav, #main, footer  {width: 100%;}}
+    </style>
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,9 +32,7 @@
             <li><a href="myy.html">MY ANI2</a></li>
 
         </ul>
-        <figure>
-            <img src="n.jpg" width="85" height="85">
-        </figure>
+       
      </nav>
      <selection id="main">
         <article>
