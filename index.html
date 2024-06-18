@@ -1,54 +1,242 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
-    <style>
-        header {padding: 5px;text-align: center;background-color: #e3afed;color: black;margin: 0px;}
-        h1{font-weight: bold;}
-        #main {float: right;width: 70%;height: 200px; background-color: yellow;}
-        nav{float: left;width: 30%;height: 200px;background-color: #ffd800;}
-        footer{background-color: #954b4b;color: #efe5d0;text-align: center;padding: 10px;margin: 0px 0px 0px 0px;font-size: 90%; clear: both;}
-   
-        @media screen and (max-width:480px){nav, #main {width: 100%;}#header{padding: 5px;}}
-        @media screen and (max-width: 500px){ header, nav, #main, footer  {width: 100%;}}
-    </style>
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My blog</title>
-    <link type="text/css" rel="stylesheet" href="mycss.css">
-</head>
-<body>
-    <header>
-        <h1>My Blog Page</h1>
-    </header>
-    <nav>
-        <h1>Links</h1>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="1.html">W3C</a></li>
-            <li><a href="2.html">MOZILLA</a></li>
-            <li><a href="3.html">HTML Dogs</a></li>
-            <li><a href="my.html">MY ANI1</a></li>
-            <li><a href="myy.html">MY ANI2</a></li>
+    <title>STELLAR 홈페이지</title>
+    <style>
 
-        </ul>
-       
-     </nav>
-     <selection id="main">
-        <article>
-            <h1>Semantic Tags</h1>
-            <p>
-                시멘틱 요소(Semantic elements)들은 브라우저에게 요소의 의미나 목적을 명확하게 알려주는 요소이다.
-            </p>
-        </article>
-        <article>
-        <h1>div와 span</h1>
-        <p>
-            div은 "divide"의 야자로서 페이지를 논리적인 섹션으로 분리하는데 사용되는 ...
-        </p>
-       </article>
-       </selection>
-       <footer> Copyright (c) 2023 Hong</footer>
-   
+
+        h2{color: #ffea00;}
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        .menu-bar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu-bar li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+
+        .menu-bar a {
+            color: #ffea00;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        
+        main {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .content-section {
+            margin-top: 20px;
+            background-color: #000000;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: #ffffff;
+        }
+
+
+        .content-section h2 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* 슬라이드쇼 스타일 */
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .slideshow-slide {
+            display: flex;
+            width: 300%;
+            animation: slide 15s infinite;
+        }
+
+        .slideshow-slide img {
+            width: 33.3333%;
+            border-radius: 5px;
+
+            
+        }
+
+        .slideshow-container {
+           max-width: 20%;
+           height: auto;
+        }
+
+        @keyframes slide {
+            0%,
+            20% {
+                transform: translateX(0%);
+            }
+
+            25%,
+            45% {
+                transform: translateX(-33.3333%);
+            }
+
+            50%,
+            70% {
+                transform: translateX(-66.6666%);
+            }
+
+            75%,
+            100% {
+                transform: translateX(0%);
+            }
+        }
+
+        footer {
+            background-color: #000000;
+            color: #ffea00;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* 미디어 쿼리 */
+        @media (max-width: 768px) {
+            .slideshow-slide {
+                width: 200%;
+            }
+
+            .slideshow-slide img {
+                width: 50%;
+            }
+
+            @keyframes slide {
+                0%,
+                20% {
+                    transform: translateX(0%);
+                }
+
+                25%,
+                45% {
+                    transform: translateX(-50%);
+                }
+
+                50%,
+                70% {
+                    transform: translateX(-100%);
+                }
+
+                75%,
+                100% {
+                    transform: translateX(0%);
+                }
+            }
+        }
+
+        @media (max-width: 480px) {
+            .slideshow-slide {
+                width: 100%;
+            }
+
+            .slideshow-slide img {
+                width: 100%;
+            }
+
+            @keyframes slide {
+                0%,
+                33% {
+                    transform: translateX(0%);
+                }
+
+                38%,
+                66% {
+                    transform: translateX(-100%);
+                }
+
+                71%,
+                100% {
+                    transform: translateX(-200%);
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="menu-bar">
+            <ul>
+                <li><a href="index.html">홈</a></li>
+                <li><a href="gallery.html" class="active">갤러리</a></li>
+                <li><a href="purchase.html">구매하기</a></li>
+                <li><a href="my-page.html">마이페이지</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="content-section">
+            <h2>STELLAR</h2>
+            <p>내 안의 천체를 발견하다: <br> 우리의 최신 기능으로 우주의 광대한 경이로움을 탐험하세요. 
+        </section>
+
+        <!-- 슬라이드쇼 섹션 -->
+        <section id="slideshow" class="content-section">
+        
+            <div class="slideshow-container">
+                <div class="slideshow-slide">
+                    <img src="1.jpg" alt="슬라이드 1" >
+                    <img src="2.jpg" alt="슬라이드 2" >
+                    <img src="3.jpg" alt="슬라이드 3" >
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p> STELLAR </p>
+            <p>주소: STELLAR, 부산시 금정구 410번길</p>
+            <p>전화번호: 010-1234-0309</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구매하기</title>
+    <style>
+
+        h2{color: #ffea00;}
+    
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        .menu-bar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu-bar li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .menu-bar a {
+            color: #ffea00;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        
+
+        .purchase-section {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #000000;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            color: #fff;
+        }
+
+        .purchase-section h2 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        .item-details {
+            flex: 1;
+        }
+
+        .item-name {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .item-description {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .item-price {
+            font-size: 20px;
+            color: #ffea00;
+        }
+
+        .item-quantity {
+            margin-left: auto;
+            font-size: 16px;
+            border: 1px solid #ffea00;
+            padding: 5px;
+            width: 50px;
+            text-align: center;
+            color: #ffea00;
+            background-color: #000;
+        }
+
+        .purchase-button {
+            display: block;
+            width: 100%;
+            background-color: #ffea00;
+            color: #000000;
+            border: none;
+            padding: 10px;
+            font-size: 18px;
+            text-align: center;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .purchase-button:hover {
+            background-color: #ffea00;
+        }
+
+        footer {
+            background-color: #000000;
+            color: #ffea00;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="menu-bar">
+            <ul>
+                <li><a href="index.html">홈</a></li>
+                <li><a href="gallery.html">갤러리</a></li>
+                <li><a href="purchase.html">구매하기</a></li>
+                <li><a href="my-page.html">마이페이지</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="purchase-section">
+            <h2>우주 탐사 장비 구매하기</h2>
+
+            <div class="item">
+                <img src="spacesuit.jpg" alt="Item 1">
+                <div class="item-details">
+                    <div class="item-name">우주복 모델 X-001</div>
+                    <div class="item-description">NASA에서 사용하는 고급 우주복입니다.</div>
+                    <div class="item-price">$500</div>
+                </div>
+                <input type="number" class="item-quantity" value="1" min="1">
+               
+            </div>
+
+            <div class="item">
+                <img src="spaceship1.jpg" alt="Item 2">
+                <div class="item-details">
+                    <div class="item-name">우주선 yeon</div>
+                    <div class="item-description">긴 여행을 위한 안전한 우주선입니다.</div>
+                    <div class="item-price">$700</div>
+                </div>
+                <input type="number" class="item-quantity" value="1" min="1">
+              
+            </div>
+
+            <div class="item">
+                <img src="9.jpg" alt="Item 3">
+                <div class="item-details">
+                    <div class="item-name">행성</div>
+                    <div class="item-description">새로 발견된 행성입니다.</div>
+                    <div class="item-price">$3840</div>
+                </div>
+                <input type="number" class="item-quantity" value="1" min="1">
+               
+            </div>
+
+            <div class="item">
+                <img src="spaceship2.jpg" alt="Item 4">
+                <div class="item-details">
+                    <div class="item-name">우주선 jae</div>
+                    <div class="item-description">NASA에서 새롭게 만든 우주선입니다.</div>
+                    <div class="item-price">$1000</div>
+                </div>
+                <input type="number" class="item-quantity" value="1" min="1">
+               
+            </div>
+
+
+
+            <button class="purchase-button">구매하기</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p> STELLAR </p>
+            <p>주소: STELLAR, 부산시 금정구 410번길</p>
+            <p>전화번호: 010-1234-0309</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

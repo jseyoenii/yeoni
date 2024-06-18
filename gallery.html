@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>갤러리</title>
+    <style>
+
+        h2{color: #ffea00;}
+    
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        .menu-bar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu-bar li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .menu-bar a {
+            color: #ffea00;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+
+        .gallery-section {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #000000;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            color: #fff;
+        }
+
+        .gallery-section h2 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .gallery-images {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            width: 30%;
+            margin: 0 10px 20px;
+            text-align: center;
+        }
+
+        .gallery-item a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #000000;
+            color: #ffea00;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+       
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="menu-bar">
+            <ul>
+                <li><a href="index.html">홈</a></li>
+                <li><a href="gallery.html" class="active">갤러리</a></li>
+                <li><a href="purchase.html">구매하기</a></li>
+                <li><a href="my-page.html">마이페이지</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="gallery-section">
+            <h2>우주 갤러리</h2>
+            <div class="gallery-images">
+                <div class="gallery-item">
+                    <img src="4.jpg" alt="갤러리 이미지 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="5.jpg" alt="갤러리 이미지 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="6.jpg" alt="갤러리 이미지 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="7.jpg" alt="갤러리 이미지 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="11.jpg" alt="갤러리 이미지 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="10.jpg" alt="갤러리 이미지 6">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p> STELLAR </p>
+            <p>주소: STELLAR, 부산시 금정구 410번길</p>
+            <p>전화번호: 010-1234-0309</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
