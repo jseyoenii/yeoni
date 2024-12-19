@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>음식 분류기</title>
+    <link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>🍕🍔🍜 음식 분류기</h1>
+        <p>이미지를 업로드하거나 드래그하여 음식을 분류하세요!</p>
+        <div id="drop-zone" class="drop-zone">
+            <input type="file" id="upload" hidden />
+            <button onclick="document.getElementById('upload').click()">이미지 선택</button>
+            <p>또는 이미지를 여기로 드래그하세요</p>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
